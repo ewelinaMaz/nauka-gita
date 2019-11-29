@@ -19,5 +19,8 @@
   "homepage": "https://github.com/ewelinaMaz/nauka-gita#readme",
   "dependencies": {
     "browser-sync": "^2.26.7"
+  },
+  "devDependencies": {
+    "nu-html-checker": "^0.1.0"
   }
 }
