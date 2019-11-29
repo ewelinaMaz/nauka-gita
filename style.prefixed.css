@@ -1,4 +1,6 @@
 body {
+  display: -ms-flexbox;
+  display: flex;
   margin: 15px, 50px;
   padding: 5% 10%;
   font-family:serif;
@@ -19,7 +21,8 @@ body {
   padding-left: 35%;
   line-height: 1.7;
   font-weight: lighter;
-  justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 footer {
   margin-bottom: 0;
