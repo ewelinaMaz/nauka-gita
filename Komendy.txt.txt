@@ -1,39 +1,21 @@
 Autoprefixer
+Komenda:
+autoprefixer-cli -o style.prefixed.css style.css
 
-Install:
+css:
+  justify-content: center;
+prefixed.css:
+ -ms-flex-pack: center;
+      justify-content: center;
 
-npm install --global autoprefixer-cli --save-dev
 
-Usage:
-
-autoprefixer-cli -o main.prefixed.css style.css
 
 
 
 Nu HTML Checker
+Komenda:
 
-Install: 
-npm i nu-html-checker --save-dev
-
-Usage: 
-
-cli [options] <D:\programowanie\Kodilla\Zadanie 1.1\learning-git-2\index.html>
-
-  Options:
-
-    -h, --help                   output usage information
-    -V, --version                output the version number
-    -f, --formatter <formatter>  Choose the formatter to use.
-API:
-
-var checker = require('nu-html-checker');
- 
-var batch = checker.validate([ 'test.html', 'http://google.com' ]);
- 
-batch.on('progress', function (e) {
-  console.log(checker.format('stylish', e.value), '\n');
-});
- 
-batch.on('end', function (err) {
-  if (err) console.error(err.stack);
-})
+$ nu-html-checker *.html
+Wynik:
+index.html
+No validation errors found!
